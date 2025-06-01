@@ -1,6 +1,5 @@
-import { ArrowRight, MessageSquareText, BarChart2, Zap, Clock } from "lucide-react"
+import { ArrowRight, Check, MessageSquareText, BarChart2, Zap, Clock } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import { Badge } from "@/components/ui/badge"
 
 export default function Home() {
   return (
@@ -191,15 +190,65 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Pricing Section - Más variedad de packs */}
-        <section className="py-12 md:py-16">
+
+        <section id="waitlist" className="w-full py-20 md:py-32 relative overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-b from-slate-950 to-slate-900"></div>
+          <div className="container px-4 md:px-6 relative z-10">
+            <div className="max-w-3xl mx-auto text-center">
+              <div className="inline-flex items-center rounded-full border border-purple-500/20 bg-purple-500/10 px-3 py-1 text-sm backdrop-blur-xl mb-6">
+                <span className="text-purple-300">Early Access</span>
+              </div>
+              <h2 className="text-3xl font-bold tracking-tighter md:text-5xl/tight mb-6">
+                Join the Waitlist for{" "}
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-cyan-400 to-purple-400 animate-gradient">
+                  Access
+                </span>
+              </h2>
+              <p className="text-white/70 text-lg md:text-xl mb-10 max-w-2xl mx-auto">
+                We're currently in private beta. Leave your email to be among the first to experience the future of
+                AI-powered websites.
+              </p>
+
+              <div className="relative max-w-md mx-auto">
+                <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-cyan-600 rounded-full blur-md opacity-70"></div>
+                <div className="relative flex items-center bg-slate-900 border border-white/10 rounded-full p-1">
+                  <input
+                    type="email"
+                    placeholder="Enter your email address"
+                    className="flex-1 bg-transparent border-none outline-none text-white placeholder:text-white/50 px-4 py-3"
+                    aria-label="Email address"
+                  />
+                  <Button className="rounded-full bg-gradient-to-r mr-4 from-purple-500 to-cyan-500 hover:from-purple-600 hover:to-cyan-600 text-white border-0 px-6 py-3">
+                    Join Waitlist
+                  </Button>
+                </div>
+              </div>
+
+              <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4 text-white/60 text-sm">
+                <div className="flex items-center">
+                  <Check className="h-4 w-4 mr-2 text-green-400" />
+                  <span>No credit card required</span>
+                </div>
+                <div className="flex items-center">
+                  <Check className="h-4 w-4 mr-2 text-green-400" />
+                  <span>Early access to new features</span>
+                </div>
+                <div className="flex items-center">
+                  <Check className="h-4 w-4 mr-2 text-green-400" />
+                  <span>Cancel anytime</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* <section className="py-12 md:py-16">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <h2 className="text-2xl font-bold tracking-tighter md:text-3xl">Planes para cada tipo de streamer</h2>
             </div>
             <div className="mx-auto grid max-w-6xl grid-cols-1 gap-4 py-8 md:grid-cols-2 lg:grid-cols-5">
-              {/* Pack 1 - Básico */}
-              <div className="flex flex-col rounded-lg border p-4">
+               <div className="flex flex-col rounded-lg border p-4">
                 <div className="mb-2">
                   <h3 className="text-lg font-bold">Básico</h3>
                   <p className="text-xs text-muted-foreground">Para comenzar</p>
@@ -218,8 +267,7 @@ export default function Home() {
                 </Button>
               </div>
 
-              {/* Pack 2 - Iniciante */}
-              <div className="flex flex-col rounded-lg border p-4">
+               <div className="flex flex-col rounded-lg border p-4">
                 <div className="mb-2">
                   <h3 className="text-lg font-bold">Iniciante</h3>
                   <p className="text-xs text-muted-foreground">Streamers emergentes</p>
@@ -239,8 +287,7 @@ export default function Home() {
                 </Button>
               </div>
 
-              {/* Pack 3 - Profesional */}
-              <div className="flex flex-col rounded-lg border border-purple-600 bg-purple-50 dark:bg-purple-950/20 p-4 shadow-lg">
+               <div className="flex flex-col rounded-lg border border-purple-600 bg-purple-50 dark:bg-purple-950/20 p-4 shadow-lg">
                 <div className="mb-2">
                   <Badge className="mb-1">Popular</Badge>
                   <h3 className="text-lg font-bold">Profesional</h3>
@@ -262,8 +309,7 @@ export default function Home() {
                 </Button>
               </div>
 
-              {/* Pack 4 - Avanzado */}
-              <div className="flex flex-col rounded-lg border p-4">
+               <div className="flex flex-col rounded-lg border p-4">
                 <div className="mb-2">
                   <h3 className="text-lg font-bold">Avanzado</h3>
                   <p className="text-xs text-muted-foreground">Creadores en crecimiento</p>
@@ -284,8 +330,7 @@ export default function Home() {
                 </Button>
               </div>
 
-              {/* Pack 5 - Enterprise */}
-              <div className="flex flex-col rounded-lg border p-4">
+               <div className="flex flex-col rounded-lg border p-4">
                 <div className="mb-2">
                   <h3 className="text-lg font-bold">Enterprise</h3>
                   <p className="text-xs text-muted-foreground">Grandes creadores</p>
@@ -307,10 +352,10 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* CTA Section - Simplificado */}
-        <section className="py-12 md:py-16 bg-slate-50 dark:bg-slate-900">
+        {/* <section className="py-12 md:py-16 bg-slate-50 dark:bg-slate-900">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <h2 className="text-2xl font-bold tracking-tighter md:text-3xl">Mejora tu stream hoy mismo</h2>
@@ -320,7 +365,7 @@ export default function Home() {
               </Button>
             </div>
           </div>
-        </section>
+        </section> */}
       </main>
 
       {/* Footer - Simplificado */}
