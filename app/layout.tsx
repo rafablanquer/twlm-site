@@ -3,7 +3,7 @@ import "@/app/globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 
 export const metadata = {
-  title: "ChatInsight - Análisis de chat de Twitch en tiempo real",
+  title: "TWLM - ES",
   description: "Analiza tu chat de Twitch en tiempo real, identifica temas populares y conecta mejor con tu audiencia.",
 }
 

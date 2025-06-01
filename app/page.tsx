@@ -9,7 +9,7 @@ export default function Home() {
         <div className="container flex h-14 items-center justify-between">
           <div className="flex items-center gap-2 font-bold text-xl">
             <MessageSquareText className="h-6 w-6 text-purple-500" />
-            <span>ChatInsight</span>
+            <span>TWLM</span>
           </div>
           <div className="flex items-center gap-4">
             <Button size="sm">Registrarse</Button>
@@ -47,7 +47,7 @@ export default function Home() {
                       <div className="h-3 w-3 rounded-full bg-yellow-500"></div>
                       <div className="h-3 w-3 rounded-full bg-green-500"></div>
                     </div>
-                    <div className="text-xs text-gray-400 flex-1 text-center">ChatInsight</div>
+                    <div className="text-xs text-gray-400 flex-1 text-center">TWLM</div>
                   </div>
                   <div className="p-4 bg-gray-900 h-full">
                     <div className="grid grid-cols-2 gap-4 h-full">
@@ -373,10 +373,10 @@ export default function Home() {
         <div className="container flex flex-col items-center justify-between gap-4 md:h-16 md:flex-row">
           <div className="flex items-center gap-2 font-bold">
             <MessageSquareText className="h-5 w-5 text-purple-500" />
-            <span>ChatInsight</span>
+            <span>TWLM</span>
           </div>
           <p className="text-center text-xs text-muted-foreground">
-            © 2025 ChatInsight. Todos los derechos reservados.
+            © 2025 TWLM. Todos los derechos reservados.
           </p>
         </div>
       </footer>
