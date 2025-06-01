@@ -1,6 +1,5 @@
 import type React from "react"
 
-import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
@@ -8,9 +7,6 @@ import { Label } from "@/components/ui/label"
 import { ArrowRight } from 'lucide-react';
 
 export function ContactForm() {
-  // Estado para manejar el mensaje de éxito
-  const [formSuccess, setFormSuccess] = useState(false);
-
   return (
     <div className="bg-white p-8 rounded-xl shadow-lg relative overflow-hidden">
       <svg className="absolute -top-6 left-0 w-full h-6" viewBox="0 0 400 24" fill="none" xmlns="http://www.w3.org/2000/svg">

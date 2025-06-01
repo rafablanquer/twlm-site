@@ -205,7 +205,7 @@ export default function Home() {
                 </span>
               </h2>
               <p className="text-white/70 text-lg md:text-xl mb-10 max-w-2xl mx-auto">
-                We're currently in private beta. Leave your email to be among the first to experience the future of
+                We&apos;re currently in private beta. Leave your email to be among the first to experience the future of
                 AI-powered websites.
               </p>
 
